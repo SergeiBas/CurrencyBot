@@ -1,0 +1,178 @@
+26-05-2025 18:12:14 INFO  SettingUtils:121 - No user settings file found for chatId 426199931. Default settings used.
+26-05-2025 18:13:02 ERROR SettingUtils:45 - No bank connection for МоноБанк
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=429, URL=[https://api.monobank.ua/bank/currency]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:912)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:851)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:345)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:330)
+	at bot.banks.monobank.MonoBankService.updateCurrentData(MonoBankService.java:30)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:43)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:19:07 INFO  SettingUtils:109 - Found user settings file for chatId: 426199931
+26-05-2025 18:19:07 INFO  SettingUtils:117 - User settings added to MyTelBot.getSettings() for chatId: 426199931
+26-05-2025 18:19:26 ERROR SettingUtils:45 - No bank connection for МоноБанк
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=429, URL=[https://api.monobank.ua/bank/currency]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:912)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:851)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:345)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:330)
+	at bot.banks.monobank.MonoBankService.updateCurrentData(MonoBankService.java:30)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:43)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:20:04 INFO  SettingUtils:109 - Found user settings file for chatId: 426199931
+26-05-2025 18:20:04 INFO  SettingUtils:117 - User settings added to MyTelBot.getSettings() for chatId: 426199931
+26-05-2025 18:20:04 ERROR SettingUtils:45 - No bank connection for МоноБанк
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=429, URL=[https://api.monobank.ua/bank/currency]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:912)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:851)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:345)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:330)
+	at bot.banks.monobank.MonoBankService.updateCurrentData(MonoBankService.java:30)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:43)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:20:04 ERROR DefaultBotSession:322 - Cannot invoke "java.util.List.iterator()" because the return value of "bot.banks.Banks.getCurrencies()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because the return value of "bot.banks.Banks.getCurrencies()" is null
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:52)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:20:45 INFO  SettingUtils:109 - Found user settings file for chatId: 426199931
+26-05-2025 18:20:45 INFO  SettingUtils:117 - User settings added to MyTelBot.getSettings() for chatId: 426199931
+26-05-2025 18:20:45 ERROR DefaultBotSession:322 - f != java.lang.String
+java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4442)
+	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2976)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2924)
+	at java.base/java.util.Formatter.format(Formatter.java:2689)
+	at java.base/java.util.Formatter.format(Formatter.java:2625)
+	at java.base/java.lang.String.format(String.java:4145)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:62)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:20:48 ERROR SettingUtils:45 - No bank connection for МоноБанк
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=429, URL=[https://api.monobank.ua/bank/currency]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:912)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:851)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:345)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:330)
+	at bot.banks.monobank.MonoBankService.updateCurrentData(MonoBankService.java:30)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:43)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:20:48 ERROR DefaultBotSession:322 - f != java.lang.String
+java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4442)
+	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2976)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2924)
+	at java.base/java.util.Formatter.format(Formatter.java:2689)
+	at java.base/java.util.Formatter.format(Formatter.java:2625)
+	at java.base/java.lang.String.format(String.java:4145)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:62)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:20:51 ERROR SettingUtils:45 - No bank connection for МоноБанк
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=429, URL=[https://api.monobank.ua/bank/currency]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:912)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:851)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:345)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:330)
+	at bot.banks.monobank.MonoBankService.updateCurrentData(MonoBankService.java:30)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:43)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:20:51 ERROR DefaultBotSession:322 - f != java.lang.String
+java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4442)
+	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2976)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2924)
+	at java.base/java.util.Formatter.format(Formatter.java:2689)
+	at java.base/java.util.Formatter.format(Formatter.java:2625)
+	at java.base/java.lang.String.format(String.java:4145)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:62)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:20:57 ERROR SettingUtils:45 - No bank connection for МоноБанк
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=429, URL=[https://api.monobank.ua/bank/currency]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:912)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:851)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:345)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:330)
+	at bot.banks.monobank.MonoBankService.updateCurrentData(MonoBankService.java:30)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:43)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:20:57 ERROR DefaultBotSession:322 - f != java.lang.String
+java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4442)
+	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2976)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2924)
+	at java.base/java.util.Formatter.format(Formatter.java:2689)
+	at java.base/java.util.Formatter.format(Formatter.java:2625)
+	at java.base/java.lang.String.format(String.java:4145)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:62)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:21:13 INFO  SettingUtils:109 - Found user settings file for chatId: 426199931
+26-05-2025 18:21:13 INFO  SettingUtils:117 - User settings added to MyTelBot.getSettings() for chatId: 426199931
+26-05-2025 18:21:13 ERROR SettingUtils:45 - No bank connection for МоноБанк
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=429, URL=[https://api.monobank.ua/bank/currency]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:912)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:851)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:345)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:330)
+	at bot.banks.monobank.MonoBankService.updateCurrentData(MonoBankService.java:30)
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:43)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:21:13 ERROR DefaultBotSession:322 - Cannot invoke "java.util.List.iterator()" because the return value of "bot.banks.Banks.getCurrencies()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because the return value of "bot.banks.Banks.getCurrencies()" is null
+	at bot.userssetting.SettingUtils.getDataFromOneBank(SettingUtils.java:52)
+	at bot.userssetting.SettingUtils.getCurrentData(SettingUtils.java:32)
+	at bot.telegrambot.MyTelBot.onUpdateReceived(MyTelBot.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+26-05-2025 18:23:36 INFO  SettingUtils:109 - Found user settings file for chatId: 426199931
+26-05-2025 18:23:37 INFO  SettingUtils:117 - User settings added to MyTelBot.getSettings() for chatId: 426199931
+26-05-2025 18:29:21 INFO  SettingUtils:109 - Found user settings file for chatId: 426199931
+26-05-2025 18:29:21 INFO  SettingUtils:117 - User settings added to MyTelBot.getSettings() for chatId: 426199931
+26-05-2025 18:49:29 INFO  SettingUtils:109 - Found user settings file for chatId: 426199931
+26-05-2025 18:49:29 INFO  SettingUtils:117 - User settings added to MyTelBot.getSettings() for chatId: 426199931
